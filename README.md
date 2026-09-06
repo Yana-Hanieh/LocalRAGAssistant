@@ -68,7 +68,7 @@ streamlit run app.py
 The first run downloads two small models (embedding + chat), which 
 need internet once. Every run after that is fully offline.
 
-## 🛠️ Design Decisions
+## Design Decisions
 
 * **Standard `foundry-local-sdk`, not the WinML variant**: my laptop's GPU
   is old, so hardware acceleration wasn't going to help much, so I stuck with
@@ -90,7 +90,7 @@ need internet once. Every run after that is fully offline.
   cutoff (`score < 0.5` → refuse immediately) ensured that the prompt
   isn't sent to the model.
 
-## ⚠️ Limitations
+## Limitations
 
 * **Small model, occasional garbled output.**: `qwen2.5-0.5b` is tiny
   (0.5B parameters), and every so often it'll mix up a number that should
