@@ -1,0 +1,4 @@
+venv/
+knowledge.db
+__pycache__/
+*.pyc
